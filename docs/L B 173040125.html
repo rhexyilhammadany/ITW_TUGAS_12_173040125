@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan javascript</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/L B 173040125.css">
+</head>
+<body>
+
+		<button type="button" id="tombol1">ubah warna</button>
+		<button type="button" id="tombol2">putar</button>
+		<button type="button" id="tombol3">Hilangkan</button>
+		<button type="button" id="tombol4">sembunyikan</button>
+		<div id="kotak"></div>
+
+		<script>
+			// element pada DOM
+			var tombol1 = document.getElementById('tombol1');
+			var kotak = document.getElementById('kotak');
+
+			//event pada tombil1 ketika di tekan
+			tombol1.addEventListener('click', function() {
+			//ubah style dari kotak
+			kotak.style.backgroundColor = '#bada55';
+			kotak.style.transition = '1s';
+			});
+
+			// element pada DOM
+			var tombol2 = document.getElementById('tombol2');
+			var kotak = document.getElementById('kotak');
+
+			//event pada tombil1 ketika di tekan
+			tombol2.addEventListener('click', function() {
+			//ubah style dari kotak
+			kotak.style.transform = 'rotate(360deg)' ;
+			kotak.style.transition = '2s';
+			kotak.style.width = '1px';
+			kotak.style.height = '1px';
+			kotak.style.opacity = '0';
+			});
+
+			// element pada DOM
+			var tombol3 = document.getElementById('tombol3');
+			var kotak = document.getElementById('kotak');
+
+			//event pada tombil1 ketika di tekan
+			tombol3.addEventListener('click', function() {
+			//ubah style dari kotak
+			kotak.style.marginTop = '200px';
+			kotak.style.transition = '1s';
+			kotak.style.opacity = '0';
+			});
+
+			//event pada tombil1 ketika di tekan
+			tombol4.addEventListener('click', function() {
+			//ubah style dari kotak
+			kotak.style.width = '200px';
+			kotak.style.transition = '1s';
+			kotak.style.opacity = '0';
+			});
+		</script>
+   <center><a href="../index.html" class="button noz">Index</a></center>
+</body>
+</html>

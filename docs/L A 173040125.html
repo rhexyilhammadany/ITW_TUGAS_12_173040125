@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan javascript</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/L A 173040125.css">
+</head>
+<body>
+
+		<button type="button" id="tombol1">ubah warna</button>
+		<div id="kotak"></div>
+
+		<script>
+			// element pada DOM
+			var tombol1 = document.getElementById('tombol1');
+			var kotak = document.getElementById('kotak');
+
+			//event pada tombil1 ketika di tekan
+			tombol1.addEventListener('click', function() {
+			//ubah style dari kotak
+			kotak.style.backgroundColor = '#bada55';
+			kotak.style.transition = '1s';
+			});
+		</script>
+      <center><a href="../index.html" class="button noz">Index</a></center>
+</body>
+</html>

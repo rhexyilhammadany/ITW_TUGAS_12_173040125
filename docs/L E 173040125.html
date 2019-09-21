@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan javascript</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/L E 173040125.css">
+</head>
+<body>
+	<h2>My Gallery</h2>
+
+	<div id="container">
+		
+		<div class="gambar">
+			<span>x</span>
+			1
+		</div>
+
+		<div class="gambar">
+			<span>x</span>
+			2
+		</div>
+
+		<div class="gambar">
+			<span>x</span>
+			3
+		</div>
+
+		<div class="gambar">
+			<span>x</span>
+			4
+		</div>
+
+		<div class="gambar">
+			<span>x</span>
+			5
+		</div>
+
+		<div class="gambar">
+			<span>x</span>
+			6
+		</div>
+	</div>
+
+	<script>
+		var close = document.getElementsByTagName('span');
+
+		for( var i = 0; i < close.length; i++ ) {
+			close[i].addEventListener('click', function(){
+
+			if( confirm('hapus gambar?')) {
+				this.parentNode.style.display = 'none';
+			}	
+			});
+		}
+	</script>
+  <center><a href="../index.html" class="button noz">Index</a></center>
+</body>
+</html>

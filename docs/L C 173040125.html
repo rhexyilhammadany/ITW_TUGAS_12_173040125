@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan javascript</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/L C 173040125.css">
+	
+</head>
+<body>
+	<label for="input-baris">Masukkan Jumlah Baris</label>
+	<input type="text" id="input-baris">
+	<button type="button" id="tombol-tampilkan">Tampilkan</button>
+
+	<div id="hasil"></div>
+
+	<script>
+		var hasil = document.getElementById('hasil');
+		var inputBaris = document.getElementById('input-baris');
+		var tombolTampilkan = document.getElementById('tombol-tampilkan');
+
+		tombolTampilkan.addEventListener('click', function(){
+
+			hasil.innerHTMl = '';
+
+			for( var i = 1; i <= inputBaris.value; i++ ) {
+
+				for( var j = 1; j <= i; j++) {
+					var box = document.createElement('div');
+					box.className = 'box';
+					box.innerHTML = j;
+					hasil.appendChild(box);
+				}
+
+				var br = document.createElement('br');
+				hasil.appendChild(br);
+				
+				}
+
+				inputBaris.value = '';
+
+			});
+	</script>
+	<center><a href="../index.html" class="button noz">Index</a></center>
+</body>
+</html>
